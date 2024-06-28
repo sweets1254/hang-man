@@ -112,6 +112,8 @@ def move():
         if len(snake_body) > 0:
             snake_body = [Tile(snake.x, snake.y)] + snake_body[:-1]
 
+
+
         # Check for collisions with food
         if new_head.x == food.x and new_head.y == food.y:
             snake_body.append(Tile(snake.x, snake.y))
